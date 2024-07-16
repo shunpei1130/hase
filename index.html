@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リサインくん - 退職代行サービス</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo" onclick="startConfetti()">リサインくん</div>
+        <nav>
+            <ul>
+                <li><a href="#features">弊社の特徴</a></li>
+                <li><a href="#pricing">料金</a></li>
+                <li><a href="#faq">Q＆A</a></li>
+            </ul>
+        </nav>
+        <button class="header-button">
+            <img src="https://s3-alpha-sig.figma.com/img/37ef/2ad6/33967dc6ce9801b809b687096df91f3f?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=opRs9DrMgqBSbN1UcSXXRdoZ3YV23JW-OnZEiWSAmtBWOb4B3fPD3zoVVXZdLL8j5YJVanrahSxprr4M039~biQyGtSsc8nlcyme--7ChIFD4hjdpcjEHoNTM9aJ8SnamyGQebeJpXpXho3EHTYDEqNU-W5LsE~YdYm3rt6wDZEnLwZ--o9jwyAF4aILP4qzu8es61sY5IN-wvO6NDOcb3-QgfZJAP1E4ZFQ8eAwRS4y1m0kmXSDgHrMcL2d7ivfVV2yO10PXZ-ZeE4fVMA~TTN16x-CbaW~pyoIf06J~YJZPAI5imChy410Z5jttUuhjqfzQ8EtMoRXXsGIbd-nxA__" alt="icon">
+            今すぐ退職
+        </button>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>業界最安の退職代行</h1>
+                <div class="hero-box">
+                    <h2>リサインくん</h2>
+                    <div class="price">
+                        <div class="price-item">
+                            <div class="price-type">正社員</div>
+                            <div class="price-amount" data-suffix="～">14,800円</div>
+                        </div>
+                        <div class="price-item">
+                            <div class="price-type">バイト</div>
+                            <div class="price-amount">9,800円</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="line-button">
+                    <img src="https://s3-alpha-sig.figma.com/img/37ef/2ad6/33967dc6ce9801b809b687096df91f3f?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=opRs9DrMgqBSbN1UcSXXRdoZ3YV23JW-OnZEiWSAmtBWOb4B3fPD3zoVVXZdLL8j5YJVanrahSxprr4M039~biQyGtSsc8nlcyme--7ChIFD4hjdpcjEHoNTM9aJ8SnamyGQebeJpXpXho3EHTYDEqNU-W5LsE~YdYm3rt6wDZEnLwZ--o9jwyAF4aILP4qzu8es61sY5IN-wvO6NDOcb3-QgfZJAP1E4ZFQ8eAwRS4y1m0kmXSDgHrMcL2d7ivfVV2yO10PXZ-ZeE4fVMA~TTN16x-CbaW~pyoIf06J~YJZPAI5imChy410Z5jttUuhjqfzQ8EtMoRXXsGIbd-nxA__" alt="icon">
+                    今すぐ退職
+                </button>
+                </div>
+                <div class="hero-image">
+                    <img src="Vector2.png">
+                        
+                </div>
+            </div>
+            <div class="hero-ellipse">
+                <div class="hero-ellipse-content">
+                    <div href="https://pooly.jp" class="hero-ellipse-item">
+                      <img src="https://s3-alpha-sig.figma.com/img/a5bc/1258/ede122cb1b8bd1c3c91f185413bce51a?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOkfLFVQ~euociVIs91Hm9rRvkInaBztC89sJ35Z~PlpyvG79IkmghV1CvFbw5v995cfV~haQNO3wPK63OwTihSwGiK34FpRc9EPYFaaMGssICTugJquhhNOUssihey00OqHt-XhdijsPV27EWY0f03MvRLlF4a4Df2i8JyUJ8MXe7eTQIxbCj6dp2Jc~Yu-QrFLofjMEgQr~ngSb-zkWfxcDPKAvC8yHUOhiycS0aqFZtWOC7HWgQDd80O~EuVgOVZrKN8yOBuX4JWYrs~4R8~DeOlyvr~MpefslGQcmzmqloJaLH3SfkTuZxrlhWctwr2jidfAOwFSq~77eGXmzg__" alt="Button 1">
+                      <p>転職支援</p>
+                    </div>
+                    <div href="https://pooly.jp" class="hero-ellipse-item">
+                      <img src="https://s3-alpha-sig.figma.com/img/d7a8/d6cc/ae024d6996bed57d8eef1b7901834151?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bF9M7AUKjfeZNAiXRI-iKEzYTlGmfIhg2-XW3Ui-EuEx9UUkQKGD13dZG9WDQcr0vUybToG1l8C0y11TmrMrlIfxcowiJnb04tW11NY8vOA5YeVs3TYaRL4TVUN5FfLxcs5DlNqs-W96RjRot65ySXyq1fFsrLHVOwumTL7beh-rMorUpm9tZWrV56O586o1s4e6md5wK5MTSdZZTYbTaeJOFdJIdRGfchyYstkxkA55PgSOTIk~hhrzwA-G5iLAcVaNddLJp3GZ1-NKmK303qIPMiU1eDoWSHzzjt0Aa1Kof-Pj5bhD2JhFNJ9bxqHlK3~roMtqkt69Hf5N2PC3Nw__" alt="Button 2">
+                      <p>労働組合提携</p>
+                    </div>
+                    <div href="https://pooly.jp" class="hero-ellipse-item">
+                        <img src="https://s3-alpha-sig.figma.com/img/dc3c/1369/3379853f817e4ea8145af87c3280f7f9?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V0D4mhh07-Cw46RLi7ZQdsyBgIab1eRN9IGTz2th64c0mzGloaQKnKmm07hcRNGq4OZDTmPydSGkn6txflHSbxoXdu9A8LH67FlFapltFYD4-f1ljmWgNYjwFIUcSPYfK1I-DvmoMg5LmAfyYNrRKarF5u97-IV0QQN4quzUn8m0lmUFqUIgHTzmnA5ZPPMu6D7K3XnqJUED91ev06o3hUkJ~E8oB7RQ9nOyOKfahHBPIffG~wE98J1H91UgzVgXLOIyQfANek~uiROaTHty-NxdlDJxfNpxWVTPpP89WY8W1Doj6NpoIZ6NXaP4VAqPkyhz3XBhubHI5qvLUZc7ag__" alt="Button 3">
+                        <p>即日退職可</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        
+
+        <section class="process">
+
+                        <div class="feature-item feature-item-top-left">全国即日対応</div>
+                        <div class="feature-item feature-item-top-right">全額返金保証</div>
+                        <div class="feature-item feature-item-bottom-left">失業保険・給付金<br/>のサポート完備</div>
+                        <div class="feature-item feature-item-bottom-right">即日退職可能</div>
+                        <div class="feature-item feature-item-middle-left">退職必要書類の<br/>フォーマット完備</div>
+                        <div class="feature-item feature-item-middle-right">引き継ぎが<br/>あっても安心</div>
+            <div class="process-container">
+                <div class="process-title">退職代行リサインくんとは</div>
+                <div class="process-content">
+                        
+                    <div class="process-left">
+                        <div class="process-image">
+                            <img src="https://s3-alpha-sig.figma.com/img/86c7/cb03/811b1fbb987207ad0b0c01167fe3b4b9?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oxI5J8zrIsLm4u9K9b79h9X8pRaS5bkEqhowBiZean90Xvh3zXa5l63-O6T3gJVFrXuGXoc3gExf1WtgKJFuzNCGxTyF02n4pnHTcazFbtDcbpEKImkSTJAUHGesqumB15OAUnPYj59CBrcXOPYRJlnW3tYZunhDvD~FBIzv-preXVjxaKdNox8J2V~VKoX2KYDUYyg-6UMqBKlcXCIHqQOlwX0qcZyZBWZk9E~QkNqv-fUJaBArH11D64pKt28PuoCxB2Dv3eK52pZQm-5ubxY5JmOdlrq6Yev6yRdAjljIC~MnpJGbiNi9fOsBsJVZUvSXRrVOFLxdMdG-fQkNTw__" alt="リサインくん">
+                        </div>
+                    </div>
+                    <div class="process-right">
+                        <div class="process-box">
+                            <div class="process-description">
+                                <span>退職代行リサインくんは依頼者様ファーストをモットーに、</span>
+                                <span class="highlight">労働組合と提携</span>
+                                <span>することで、</span>
+                                <span class="highlight">業界最安値</span>
+                                <span>で</span>
+                                <span class="highlight">安心</span>
+                                <span>してご利用いただける</span>
+                                <span class="highlight">円満退職代行</span>
+                                <span>サービスを提供いたします。<br/>また当社は「他社より1円でも高ければお値下げをする」</span>
+                                <span class="highlight">業界最安保障</span>
+                                <span>を導入しているため、どこよりもリーズナブルな価格をお約束します。<br/>さらに当社は退職代行だけでなく、ご希望の方には退職後の</span>
+                                <span class="highlight">転職支援</span>
+                                <span>も他社サービス顔負けのクオリティで提供しており、お仕事探しのご心配がないように</span>
+                                <span class="highlight">完全無料</span>
+                                <span>で徹底サポートさせていただきます！</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="line-button">
+                    <img src="https://s3-alpha-sig.figma.com/img/37ef/2ad6/33967dc6ce9801b809b687096df91f3f?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=opRs9DrMgqBSbN1UcSXXRdoZ3YV23JW-OnZEiWSAmtBWOb4B3fPD3zoVVXZdLL8j5YJVanrahSxprr4M039~biQyGtSsc8nlcyme--7ChIFD4hjdpcjEHoNTM9aJ8SnamyGQebeJpXpXho3EHTYDEqNU-W5LsE~YdYm3rt6wDZEnLwZ--o9jwyAF4aILP4qzu8es61sY5IN-wvO6NDOcb3-QgfZJAP1E4ZFQ8eAwRS4y1m0kmXSDgHrMcL2d7ivfVV2yO10PXZ-ZeE4fVMA~TTN16x-CbaW~pyoIf06J~YJZPAI5imChy410Z5jttUuhjqfzQ8EtMoRXXsGIbd-nxA__" alt="icon">
+                    今すぐ退職
+                </button>
+            </div>
+        </section>
+
+        <section class="flow background">
+            <div class="flow-container">
+                <div class="flow-title">リサインくんが選ばれる<br>３つの理由</div>
+                <div class="flow-cards">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://s3-alpha-sig.figma.com/img/9e45/32b1/492dc52199bc2cae4f2776092ce55710?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFwMiSw7O2XnJmuNw5GyVaMNv-mnjdhNlf6DpQY7Ulpfh5nImNy8svcmpdCLG0uahaM-OmfML2zfbOcl8G~G~daEavs7T4kTVJTGYpVo8tsn3X842iEJuC-sh7JFMxWqtnvk8niZtNqPMnHbpzo5ikqtAZLZ8nG3I-p345bjwr2Q-X2APt0i4cf0Bz~BJIRd3hjQkfrphGvFjhqP3nW6FTi~K0TDXWfg1BJweMX~1heY7lEHnIPrBNBA2FB4GxyzWWdORQwocMcIJaMCZITQiw2o5ibaspm5jITGu9JNWNfBLR1WRavZlJEGLOYHRq~ECFZ~AB~SxZ4zAY65xdAtLg__" alt="業界最安の保証">
+                        </div>
+                        <div class="card-title">業界最安の保証</div>
+                        <div class="card-description">他社より1円でも高い場合はお値下げ対応します<br><br>退職を考えるまで追い込まれている方々に、これ以上辛い思いをさせたくないという気持ちから、退職代行業務以外にかかる削減可能なコストを限界まで抑えることで、サービスの質を落とさずに業界最安を実現します！転職支援も含め、追加料金は一切かかりません！退職出来ずに追い込まれている人が今まで以上に気軽に安心してご利用できるようにスタッフ一同真摯にご対応させていただきます。</div>
+                        <div class="card-number">01</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://s3-alpha-sig.figma.com/img/23ad/f82c/d5df0d5b415667db397f25d0ac076304?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FoVH98iowo3Bwpu-RKiQ0OJoe0WNEzje6cfZGoXVttGlu0AKpSF--rMU5Fjegv61SZhY2a2OgkdYMJAAHCBKrSrH4zP~Bb0myoLyaOS0y1YL5GA1ofZIhH53jj5XaI2T3mfsHeufWoctimFfYlL7QQ-rnfqOEqpy2pQ356IFiTKJxaMBtPBwf-jBK55qQvAqF5ZrWEueBWTJjNKgFONkFNtW9HPi1fogPB7EYZ54dfPXlEU3m4S9GpRaiFfZubshPWZvcu9UXB6rGwaJxchXbrXbYee4vD9iE9S~8MZ29sSkD4NvquqbbwJIyRRueTurMi3diQAv5HjkpBjR3TCQdA__" alt="会社とのやりとり不要">
+                        </div>
+                        <div class="card-title">会社とのやりとり不要</div>
+                        <div class="card-description">会社とのやり取りは弊社で行います。<br><br>会社とのやり取りは労働組合との提携と弁護士監修のもと適法に則って全て弊社が代行いたしますのでご安心ください。あらゆるケースの退職を実現させていて、退職成功率100％継続中です。もし万が一退職出来ないようなことがあれば全額返金させていただきます。また、ご利用者さまが悪者にならず、できる限り円満に退職できるように最適な円満退職シナリオを提案し実行いたします。</div>
+                        <div class="card-number">02</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://s3-alpha-sig.figma.com/img/62f3/89be/a743c0ddf71bdd6f3bf1060f889e1ea9?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bWmHNTXmydjb~m-1aMhHH1lU072Kuw3as1XDHm~DHrF1e7uL1~Yfi0OtinC9h~1MKvDrV84OoUa9WRGiqs9d26ZAHUSQLlIKh6NBzNuVoJL10W9vwtt4DbZ7yqFvEoFiogPE-vunFr2FgjfQuoQiHyFtaC5S6mBQCITw1Yg9PeJwhQ0T4Inmq2ka4-Bv20-bcrBfkglA-tTq64qPCcebEKqlcCL4jTsNiatojeNNF55xU-hvMDuzvnwaMBmFxKVAAb9~gbM7GvCsz8KGbeK1v2aT1S-Tla-8AsSSeTDw-0BE6dS4RFk2hT~jx9drMQPITbhgi0FlmtV94f9UOwEXbA__" alt="手厚く素早い転職支援">
+                        </div>
+                        <div class="card-title">手厚く素早い転職支援</div>
+                        <div class="card-description">料金は一切かかりません。<br><br>人材事業をメインに行う株式会社POOY運営のため、他社サービスと比較しても圧倒的な転職支援の質をご提供します。2000社を超える（アライアンス企業含め）紹介可能企業の中から厳選して、あなたに合ったホワイト企業をご紹介いたします。退職後のキャリアがご心配で一歩踏み出せない方もまずはお気軽にご相談ください。</div>
+                        <div class="card-number">03</div>
+                    </div>
+                </div>
+                
+       
+
+        <h2 id="features" class="flow-title">ご利用の流れ</h2>
+        <img class="sub" src="https://s3-alpha-sig.figma.com/img/1277/95f3/61b344e7c9c2513005ab3f00248e3faa?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Lk~pJCEY76oaZaJysKdopGDlSGekmvnRpkCrXfT9sxgbKQrHzqcsEVNNa4uzkHpm3etOd5f6O4AnO17TC14sqq2EnMfg3W9TE9kcKnjSVtG8KFSCXlT~OTybMwD-wnxVDo0WLQKozmk5K4q9INDymO0Sn~tFwPSZENRNUhSiwfSWvMG8ii-K2lVNfz~x222JWVyyVmsU1d0r2k2q3J92UWgl6nxk6qc9YSMjbL5tYLtpYZT~6tIKHM0MgP2C8~JIOK48DQ3wqsBU~rmATZH3ilb33bH7ZJpeD0MLPTzSGpPBBgA6uHwHnYiygTDMEvLsVzpaWWOLRQ1b-g9s6uJDlQ__">
+    <div class="flow">
+      <div class="flow-box">
+        <div class="flow-step">
+          <h3 class="flow-number">1</h3>
+          <img src="https://s3-alpha-sig.figma.com/img/8829/faf1/9cd40485087712a8af885d834109197b?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JRIN3ZgRi4SlJDojNQSzUsd6Ooekopu6O-~bm3JJ~ZgszPXJRnV4kTXzskaiMjUNd-UYxWSsg1eoTFg6bpfEBQc4Yr1cnmMe4GFY-gS-JliswwxLrFbOgFSTL-ZQokrcvGBSHSyXd8Ak9zM2oOC~Hj~E4X4c1--1A6OGjVuA85NfNwv174EkMiAJfUTUGpX1F-PlsUSHV3mKmPDOQWccE57KXYP5fXByTZYvSOLH2mhMxkoz8A34SlVeHtBcYa0K9B3uNIeQ5euwaULJFbAL8fA02~Bbvi0F4aq-5uvUrNqjGl9gWKBEYyMkkJnUwQZy5odJ1mV7DL0N7OeoWjHbEQ__" alt="お問い合わせ画像" class="flow-image">
+          <h4 class="flow-subtitle">お問い合わせ</h4>
+          <p class="flow-description">LINE・電話・メールにて受け付けております。まずはお気軽にお問い合わせください。</p>
+         
+        </div>
+        <div class="flow-arrow">
+            <svg width="69" height="21" viewBox="0 0 69 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Arrow 4" d="M68.464 10.439L51.0024 0.357505V20.5204L68.464 10.439ZM0.22403 12.1851H52.7486V8.6928H0.22403L0.22403 12.1851Z" fill="black"/>
+                </svg>
+                
+        </div>
+        <div class="flow-step">
+          <h3 class="flow-number">2</h3>
+          <img src="https://s3-alpha-sig.figma.com/img/ac33/6471/0f8a831737d72c9798fea0f51ad42cf6?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kdxnCIV89O-K~vgRFSopxjD6ivDIF5abZCF9W~2pX~y5pf2dIi-MgTJCFznU4MSOafQ2Puzbki50a8r-rpfgTvSMtKdHA~Mt7VLOxcWf4-uCI5mzykJ2qFRgNOMAx0q~H3CAbj0Xnij5TFOG3Iaw9H8uuBAz8KjKhk1wVq4sovXcB8XGg~8TUdPkqFV~ZWhBgEbUYTHHOwzIyh-Gxbj4F6nJ8tVkTEdTY1pRFRqOkgzxcZFdpM25cr4zkFglkJzUkGyF8tarZuyrFXywF4oG2T-wkRiqUwKlff79xZesp1lgGghUeWxKALK8JmHO6PritEWz14AeC-jrkZlsgZpYSQ__" alt="カウンセリング画像" class="flow-image">
+          <h4 class="flow-subtitle">カウンセリング</h4>
+          <p class="flow-description">退職希望日や退職理由等の必要な情報を整理し、それに沿って円満退職へ向けたご準備をさせていただきます。</p>
+         
+        </div>
+        <div class="flow-arrow">
+            <svg width="69" height="21" viewBox="0 0 69 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Arrow 4" d="M68.464 10.439L51.0024 0.357505V20.5204L68.464 10.439ZM0.22403 12.1851H52.7486V8.6928H0.22403L0.22403 12.1851Z" fill="black"/>
+                </svg>
+        </div>
+        <div class="flow-step">
+          <h3 class="flow-number">3</h3>
+          <img src="https://s3-alpha-sig.figma.com/img/43fa/88d1/a73b8ec0bd81da014dfdf974a272b2bf?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eWfSYVEdG457t7IrFWMtkdZnSKilQFj6nNnkyrrEc9m0B0jG1dxURnuOmBQeIvai-QFZzJhHzpTbojDGyisSgbz7y-oFhy7CYyWAQOdzscCsIqbl8waJ3meMek2JL3klKFDeHlp3wSy4YjkUdPz3ZZefz-sJwprsHKUcILp8LOsblWbGmrjivBTWk9D1tTiNkPUFxZsneFMfwrzjNZoQbWzRfDJK-LM1or8j~WBjfBkH7h2PTauHpw4G7Qb7PDofiDT8RT3pTe34~4yGliaOFTxW1eGpklxWcmPRe~qntXWy-YM~r4lVH~gz90icc0ejbtmWyqJX31DQrA9k1gVXyA__" alt="料金の支払い画像" class="flow-image">
+          <h4 class="flow-subtitle">料金の支払い</h4>
+          <p class="flow-description">ご利用規約を確認頂き、ご契約となります。銀行振込、クレカ決済、コンビニ決済に対応しております。</p>
+         
+        </div>
+        <div class="flow-arrow">
+            <svg width="69" height="21" viewBox="0 0 69 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Arrow 4" d="M68.464 10.439L51.0024 0.357505V20.5204L68.464 10.439ZM0.22403 12.1851H52.7486V8.6928H0.22403L0.22403 12.1851Z" fill="black"/>
+                </svg>
+        </div>
+        <div class="flow-step">
+          <h3 class="flow-number">4</h3>
+          <img src="https://s3-alpha-sig.figma.com/img/b781/49b3/133baf104cbe870d779159adb7f5d5ef?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gKREH271BNzKSv8uTltJv4Bje95GkE3qj0W8ZC8YJSn1DTWKIY7jZ9bE5m2p6gLYuqc2Erknxh8sDOgvBRfUIEhl8QUxrqhjGnqA6xfO-S3aRNnQ-B2engWddApYAS~pRVmbP9dMIQBZz9zPlG8LY75SJZVs5bYNssdvVJS1gOJIoZfIM5BHZzsG~3qXgl5mBfWJY7JqtepKSPXBSt7hBhLnuNxmaZoG3X3hJIadRlz26ymqQnOQ~HHSxiNhUlD4nZHiI4iJiDPAzqoeRLLqSdhM-lWFmnvg85nMXzm2jjUE0d4RRSz9y6W5jg9eIIBqfDPeOgax8TeVfS4wGFQakQ__" alt="退職代行画像" class="flow-image">
+          <h4 class="flow-subtitle">退職代行</h4>
+          <p class="flow-description">勤務先へ退職意思の連絡を代行します。郵送にて退職届や貸与物・返却物の対応を行って頂き退職完了となります。</p>
+        
+        </div>
+      </div>
+
+      <div class="down-arrow">
+        <svg class="down-arrow" width="88" height="76" viewBox="0 0 88 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M44 76L0.69873 0.25L87.3013 0.25L44 76Z" fill="black"/>
+            </svg>
+            
+    </div>
+
+
+      <div class="flow-bottom-box">
+        <div class="flow-step">
+          <h3 class="flow-number">5</h3>
+          <img src="https://s3-alpha-sig.figma.com/img/1225/7943/126e752d27f217479abe64fb5429eb3c?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AHOrL0zIuItXoxLZxcEi2xNT~n00KHkD6Ngb6bIdEPzWb7VXzYlfX~-r46FS58gQC9k0X1U-XXWzm15lj0irndsbeBa5Lc17DmVPjzj3O7EydiKOe6Y-49LmHS-IErGaL5IOHuLYnZuaB98KsrovOhtXgKiHCK3ZS6I-prNdDfaxVmwCpJB5zhHR7Qhb--eJOdUEWykgg0Yus9S1SC1hA6rw8ygPzoYtA4IS4nFKm7FxZzO2Vhvq0XqrczLSPd-zrkWOYD8BE1T2Ugo7zw2VrjtZB3~FvrAtMz48D8MVf7ijG-RkE-ERT7nxl5IctfbHb3Pk4N-OVznHs2vfiwqcAw__" alt="転職支援開始画像" class="flow-image">
+          <h4 class="flow-subtitle">転職支援開始</h4>
+          <p class="flow-description">ご希望する方には完全無料で転職もサポートさせていただきます！「求人探し」「履歴書の作成」「求人への応募〜面接日程調整」など、転職に必要な作業（面接以外）を全て代行します。</p>
+        </div>
+      </div>
+    </div>
+    
+</section>
+
+
+    
+        <section id="pricing" class="price">
+            <div class="inner-rounded"></div>
+            <div class="price-container">
+                <div class="price-title">ご利用料金</div>
+                <div class="price-content">
+                    <div class="pricing-box">
+                        <div class="pricing-box-left">
+                          <img src="https://s3-alpha-sig.figma.com/img/190c/48e2/e9cd64066aa90cc81a75d3716d453a60?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TToVBdrMiWCfWhQtIkegazHMVmhHkBkeMflH81HLa9o84v10IYYeCKDmPW6G5EAIfq~lI-lH0hSwGk3mDhj9oyMDKTao5yr-EAI-Tah5InQCNxcHk561Aq66IWsHGdOWXlYJEk39l5WBUOsfWVV0Yc2Ba4P3PQY6Hbp0QOSYxEJzZx4rs-GrR1Kvrk9IGh6DCugQHTfIJ1MsKF8K0yC55pB3PGjSirdszp728T8FnaclmaK7ye6KKJgJIQx7Dpfdb2f-Avk-ryfuiDhh-1ULuGSIbsX~CcSwoP-~tBoWFRwfGGUhSIWqPjrxsXoRx-G7QyC6L~RDtocS~YnY3VpWxA__" alt="サービス画像" class="pricing-image">
+                        </div>
+                        <div class="pricing-box-right">
+                          <p class="pricing-text">正社員・派遣社員・契約社員</p>
+                          <div class="pricing-amount">
+                            <span class="pricing-price">19,800</span>
+                            <span class="pricing-currency">円</span>
+                            <span class="pricing-tax">(税込)</span>
+                          </div>
+                          <div class="pricing-divider"></div>
+                          <p class="pricing-text">パート・アルバイト</p>
+                          <div class="pricing-amount">
+                            <span class="pricing-price">9,800</span>
+                            <span class="pricing-currency">円</span>
+                            <span class="pricing-tax">(税込)</span>
+                          </div>
+                          <div class="pricing-divider"></div>
+                          <p class="pricing-note">他社より1円でもお高い場合はお値下げいたします！ 
+                            <br>追加費用や後からの請求は一切無し！ 
+                            <br>弁護士監修の退職届テンプレ付き!</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="discounts">
+                    <div class="discount-box">
+                        <div class="discount-title">転職割</div>
+                        <div class="discount-description">＼転職支援サービスのご利用で／<br><br><div class="discount-value">5,000円OFF</div><br>弊社提携中転職支援サービスの<br>ご利用１社につき<br>1000円キャッシュバック</div>
+                        
+                    </div>
+                    <div class="discount-box">
+                        <div class="discount-title">紹介割</div>
+                        <div class="discount-description">＼利用者様からの紹介で／<br><br><div class="discount-value">2,000円OFF</div><br>リサインくん利用者様からの<br>ご紹介で適用</div>
+                        
+                    </div>
+                    <div class="discount-box">
+                        <div class="discount-title">リピート割</div>
+                        <div class="discount-description">＼ 2回目以降は何度でも／<br><br><div class="discount-value">10,000円(税込)</div><br>代行サービス利用後１年間は<br>何度でもリピート割適用<br>※アルバイトは8,000円</div>
+                        
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <div class="payment-title">お支払い方法</div>
+                    <div class="payment-method">
+                        <div class="payment-method-box">銀行振込</div>
+                        <div class="payment-details">GMOあおぞらネット銀行　法人営業部(101)　普通　1697098　株式会社POOLY</div>
+                    </div>
+                    <div class="payment-method">
+                        <div class="payment-method-box">クレジットカード</div>
+                        <div class="payment-details">VISA・Master・JCB・AMEX・Diners<br>※退職代行契約後にsquare決済サービスのURLをお送りします。</div>
+                    </div>
+                    <div class="payment-method">
+                        <div class="payment-method-box">PayPay支払い</div>
+                        <div class="payment-details">退職代行契約後に支払いリンクをお送りします</div>
+                    </div>
+                </div>
+                <button class="line-button price-button">
+                    <img src="https://s3-alpha-sig.figma.com/img/37ef/2ad6/33967dc6ce9801b809b687096df91f3f?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=opRs9DrMgqBSbN1UcSXXRdoZ3YV23JW-OnZEiWSAmtBWOb4B3fPD3zoVVXZdLL8j5YJVanrahSxprr4M039~biQyGtSsc8nlcyme--7ChIFD4hjdpcjEHoNTM9aJ8SnamyGQebeJpXpXho3EHTYDEqNU-W5LsE~YdYm3rt6wDZEnLwZ--o9jwyAF4aILP4qzu8es61sY5IN-wvO6NDOcb3-QgfZJAP1E4ZFQ8eAwRS4y1m0kmXSDgHrMcL2d7ivfVV2yO10PXZ-ZeE4fVMA~TTN16x-CbaW~pyoIf06J~YJZPAI5imChy410Z5jttUuhjqfzQ8EtMoRXXsGIbd-nxA__" alt="icon">
+                    今すぐ退職
+                </button>
+            </div>
+        </section>
+
+        <section id="review" class="review">
+            <div class="review-background"></div>
+            <div class="section-title">ご利用者様からのレビュー</div>
+            <div class="review-cards">
+                <div class="review-card">
+                    <div class="person">
+                        <img src="https://s3-alpha-sig.figma.com/img/23e6/0144/b7caabc004af4808d3d8a5529ce2e2b5?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lS2ClZLUNHNqrCfk6CIqF-VWNZ-6DAY4-48qFuv1rfFrK4xM-MpGQtwdzcwxNQZlrMuW1bXhTGbhpL2adgN7T0xXoeJ4RT1MYjr2mUzPSRP173mO2-DVh8uIUQ1B0jEdnEpjzlKfintExSAWCKR~ik692nM2HNbJ1apV687194CD5pOCEeXMJxaYHRzmsQgFj3CMr9kfzZh-2e1OKWFJSwn13fpTG-zAwYBy~IQoov7~o3NZFn6n5yJP2Nwd11m09gCGLjX2WH8wbbiT7hWn3YHZzFiqd-DIFtv7rS~2vAG9kC1RgaJHTH2IlhIBAAy77I~T-CxVh700w51PsKAfvg__" alt="User Image">
+                            
+                            
+                        <div class="person-info">
+                            <div class="industry">IT業界</div>
+                            <div class="details">30代・女性・事務職</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="card-content">
+                        <div class="card-title">ここまで安いのに対応も満足!!</div>
+                        <div class="card-text">業界最安と書いてあったので心配もありましたが、実際に使ってみると担当の方がカウンセリングから退職まで丁寧に対応していただき問題なく退職できて大満足です！ 転職サポートもしていただき無事に転職を終えることができました。</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="person">
+                        <img src="https://s3-alpha-sig.figma.com/img/713f/5eb3/acace5ff076951a42883b4c1d5f1cca1?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F5vS2vRXN6MYJd0UKsUIrsZC4aVtYcTncpeU7uzldFgILASmKMZWkX2FMptza30vYxp~6ROx7K1v3xOFmjp9bh-ApJu6jRS~wZ163lM1sa2rbHMnGtNPzToiIJN~0EWpWr9O40w5Kf87hL3tBomoZtD1CG9Y2Qw6gXCbzpSeo6owU87WxhLbdwdjlTZvpWDY-nt~XaSpORrgkOi6STQG0~8QEPKVWiSrQlF598mUjDEJ~0Us~wEfrpsXFTN8hfU1PIuVnKtFWV4qZnz-ejvFslZt~wLMpojHif~q5vNsAb78DQLwVQH1C6kRBqlw~RMNILv65G5-M8k7ZV38cBBzyA__" alt="User Image">
+                        <div class="person-info">
+                            <div class="industry">飲食業界</div>
+                            <div class="details">20代・男性・一般職</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="card-content">
+                        <div class="card-title">有給を使って退職できた</div>
+                        <div class="card-text">退職の意思だけでなく、有給休暇の取得を希望していることも伝えてくださいました。法律のことも詳しく説明してくださり、「交渉」はできないけど、会社へ私の希望を伝えるだけなら問題ないとのことで無事に有給が取得できました！</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="person">
+                        <img src="https://s3-alpha-sig.figma.com/img/96ce/0ae1/5d485d853b08d01093f2508f74d311f8?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fCiPROHfENWFXMRXWErTafRrIMWhJQkIshWyydbsHgx2V1Ed6pjPNMPH-xiLhiIjmSByDaqCXmbsQ33ufoh4MhTELQWP1lxGeTqdmKbIkarLCE8bz0Znz45MMVZdLUoFtM9PPeyYxgMNJgubeiMQn11yU1~xcc1FV~MOuxnAEH8UQUKobiIYcVEGDsF~l1G3RduL~EW7rvbPWEvLfUUsxaMnl7mqveenZrsbRGk9-ZwxsCjP7cnHBxyP~uFriRzsxIpMhxZMN7nwTcpVIJJkivpmwIz9q6RZTNauxaaA1f9BNnWSbjErJ3JO8DH2ZOAHGNXCSJNM1cTASJAUPwG1AQ__" alt="User Image">
+                        <div class="person-info">
+                            <div class="industry">建設業界</div>
+                            <div class="details">30代・男性・施工管理職</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="card-content">
+                        <div class="card-title">相談して数時間で退職できました</div>
+                        <div class="card-text">新卒入社して間もなかったこともあり、自分で言い出せず、お金も無かったのでリサインくんを利用しました。朝に相談のラインを送りその日の午前中に退職が確定したのでスピード感に驚きました。退職後のサポートもかなり手厚く、本当に感謝しています。</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="person">
+                        <img src="https://s3-alpha-sig.figma.com/img/a30e/fb73/1f988692e5b07d0452f7f47d3016256a?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eSEbgm2z6qIorBLR6lcjZOXuW043UnML2I091MmMqmcwSZudJuGTcu1wjrp3WE0IhEQDhzJoaV-uoz1g~4DUT9C0FeUwUrJISYheU-2XSslP7noogxIScGumSvszRl~kxu0mF1f3uTEAzc85MKtgPxdYNBdLwcaVylSWvESrxv0gyiTZBVvbrpd7DrIChPcVE4B7SrYnG6rXnNyLSVM4dIkX0D9VzxC7u1neB0h70nY6xr3xu86TH0iD~dA~JT2zE5axe42YmvPr6Ec1uzuVEhsvCvoL-nON2mb-juLyrIr-9vm0OEDBll4VwsaBEXDGZhS-ESI2RndvxNNE70MMmQ__" alt="User Image">
+                        <div class="person-info">
+                            <div class="industry">不動産業界</div>
+                            <div class="details">20代・男性・営業職</div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="card-content">
+                        <div class="card-title">安いのにサービスの質が高かった!</div>
+                        <div class="card-text">退職後の手続きや、引き継ぎはどうなるのか、上司からの連絡にはどう対応するかなど不安なことが多すぎる中での利用でしたが、質問に迅速にお答えいただき安心して退職ができました。スピード、料金、対応どれも大満足でした。ありがとうございました。</div>
+                    </div>
+                </div>
+            </div>
+            <button class="review-button line-button">
+                <img src="https://s3-alpha-sig.figma.com/img/37ef/2ad6/33967dc6ce9801b809b687096df91f3f?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=opRs9DrMgqBSbN1UcSXXRdoZ3YV23JW-OnZEiWSAmtBWOb4B3fPD3zoVVXZdLL8j5YJVanrahSxprr4M039~biQyGtSsc8nlcyme--7ChIFD4hjdpcjEHoNTM9aJ8SnamyGQebeJpXpXho3EHTYDEqNU-W5LsE~YdYm3rt6wDZEnLwZ--o9jwyAF4aILP4qzu8es61sY5IN-wvO6NDOcb3-QgfZJAP1E4ZFQ8eAwRS4y1m0kmXSDgHrMcL2d7ivfVV2yO10PXZ-ZeE4fVMA~TTN16x-CbaW~pyoIf06J~YJZPAI5imChy410Z5jttUuhjqfzQ8EtMoRXXsGIbd-nxA__" alt="icon">
+                今すぐ退職
+            </button>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <h2 class="faq-title">よくあるご質問</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(1)">
+                        <span><span style="font-weight: bold">01</span> 本当に退職できる？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        もちろん可能です！法律上、会社側は退職したい人を引き止めることはできません。退職成功率は100％となっております！
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(2)">
+                        <span><span style="font-weight: bold">02</span> 即日退職はできる？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        依頼していただいたその日から出社せずに退職が可能ですが、書類上の「退職日」が即日になる保証はできかねます。もし仮に退職日が後日になったとしても退職の連絡をした後に出勤する必要はありませんのでご安心ください。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(3)">
+                        <span><span style="font-weight: bold">03</span> 自分や家族に連絡は来ない？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        退職に関する質問です。回答をここに記載してください。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(4)">
+                        <span><span style="font-weight: bold">04</span> 退職代行は合法？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        退職に関する質問です。回答をここに記載してください。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(5)">
+                        <span><span style="font-weight: bold">05</span> 退職を会社に伝えたら止められそう。</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        退職に関する質問です。回答をここに記載してください。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(6)">
+                        <span><span style="font-weight: bold">06</span> 引き継ぎはどうすればいい？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        退職に関する質問です。回答をここに記載してください。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(7)">
+                        <span><span style="font-weight: bold">07</span> 有給は消化できる？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        退職に関する質問です。回答をここに記載してください。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(8)">
+                        <span><span style="font-weight: bold">08</span> 社宅に住んでても大丈夫？</span>
+                        <span class="faq-toggle">＋</span>
+                    </div>
+                    <div class="faq-answer">
+                        退職に関する質問です。回答をここに記載してください。
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="contact">
+            <div class="contact-text">まずはお気軽にご相談ください！</div>
+            <div class="contact-text">24時間365日無料で相談可能です。</div>
+            <button class="contact-mail-button">
+                <img src="https://s3-alpha-sig.figma.com/img/ce04/c0a7/1563dcb5a4510de2d21ff0ec72a73e14?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BdvifdXn8jnZ6dXG-ustKL4F97LgBdukPZe8KuQe6nnhn-I~ElAs9NQYvx7WHN8m2KuwXxT9Gdbk9JEpIjho32MwTQSzfSby0DhsSktMASU8YHrACDJ9TwHp4hCu6LiSYBBNfwj19Lf1UoQUMgvYjZrGq7bP9mfS09rwW0ob7fJcHk8bZN9zKCcDM74CrCfCDO5OsKjlbkzEbovipP-jFOhEbRcqBKKESl5HtmBa4JHWDG747wEwyQQE8IcLfxjBnAd35XtQ2qW0tku1o3KmXMfHH6P3HsXlZO1s4RRnJWC994V9BCMb0C-ERs7zZDWcEN6j8v7kEY49O9BJPXAIhA__" alt="メールアイコン">
+                メールで相談
+            </button>
+            <button class="contact-line-button">
+                <img src="https://s3-alpha-sig.figma.com/img/37ef/2ad6/33967dc6ce9801b809b687096df91f3f?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=opRs9DrMgqBSbN1UcSXXRdoZ3YV23JW-OnZEiWSAmtBWOb4B3fPD3zoVVXZdLL8j5YJVanrahSxprr4M039~biQyGtSsc8nlcyme--7ChIFD4hjdpcjEHoNTM9aJ8SnamyGQebeJpXpXho3EHTYDEqNU-W5LsE~YdYm3rt6wDZEnLwZ--o9jwyAF4aILP4qzu8es61sY5IN-wvO6NDOcb3-QgfZJAP1E4ZFQ8eAwRS4y1m0kmXSDgHrMcL2d7ivfVV2yO10PXZ-ZeE4fVMA~TTN16x-CbaW~pyoIf06J~YJZPAI5imChy410Z5jttUuhjqfzQ8EtMoRXXsGIbd-nxA__" alt="ラインアイコン">
+                LINEで相談
+            </button>
+        </section>
+<div class="footer">
+        <section class="policy-section">
+            <ul>
+                <li><a href="#terms">利用規約</a></li>
+                <li><a href="#commercial-law">特定商取引法に基づく表記</a></li>
+                <li><a href="#privacy-policy">プライバシーポリシー</a></li>
+            </ul>
+        </section>
+</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
