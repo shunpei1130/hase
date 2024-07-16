@@ -433,6 +433,7 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'KeiFont', sans-serif;
+    color: white;
 }
 
 nav ul {
@@ -469,10 +470,20 @@ nav ul li a {
     color: white;
     flex: 20; /* 左側の割合を大きくする */
     padding-right: 10%;
+    padding-top: 34px;
 }
 
 .hero-image {
     flex: 19; 
+}
+
+.hero-image p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    top: 45px;
+    position: relative;
 }
 .hero-box{
     text-align: end;
@@ -482,7 +493,7 @@ nav ul li a {
     padding-left: 15%;
     font-size: 58px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 0px #000;
     margin-bottom: 0;
 }
 
@@ -498,6 +509,9 @@ nav ul li a {
     width: 520px;
     height: 511px;
 }
+
+
+
 
 .hero-ellipse {
     position: absolute;
@@ -517,7 +531,7 @@ nav ul li a {
 .hero-ellipse-content {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 85%;
 }
 
 .hero-ellipse-item {
@@ -534,6 +548,7 @@ nav ul li a {
     margin-top: 5px;
     font-size: 14px;
     color: #000;
+    font-weight: bold;
 }
 
 
@@ -1336,17 +1351,22 @@ html {
 .faq-item {
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    box-shadow: 0 2.5px 0 black;
     width: calc(50% - 10px); /* 幅を広げる */
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.3s ease;
+    max-height: 86px;
 }
 
 .faq-item.active .faq-answer {
     max-height: 200px;
     padding: 20px;
+}
+
+.faq-item.active {
+    max-height: 200px;
 }
 
 .faq-question {
@@ -1355,6 +1375,7 @@ html {
     align-items: center;
     padding: 20px;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 .faq-toggle {
@@ -1363,7 +1384,7 @@ html {
 }
 
 .faq-answer {
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
     padding: 0 20px;
     transition: all 0.3s ease;

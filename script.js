@@ -17,13 +17,19 @@ function toggleFaq(index) {
 
 document.querySelectorAll(".line-button").forEach(function(button) {
     button.addEventListener("click", function() {
-        window.location.href = "https://example.com"; // ここに遷移先のURLを指定
+        window.location.href = "https://line.me/R/ti/p/@032svnai"; // ここに遷移先のURLを指定
     });
 });
 
 document.querySelectorAll(".contact-line-button").forEach(function(button) {
     button.addEventListener("click", function() {
-        window.location.href = "https://example.com"; // ここに遷移先のURLを指定
+        window.location.href = "https://line.me/R/ti/p/@032svnai"; // ここに遷移先のURLを指定
+    });
+});
+
+document.querySelectorAll(".contact-mail-button").forEach(function(button) {
+    button.addEventListener("click", function() {
+        window.location.href = "mailto:info@pooly.jp"; // ここに遷移先のURLを指定
     });
 });
 
