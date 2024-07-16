@@ -34,12 +34,18 @@ document.querySelectorAll(".contact-mail-button").forEach(function(button) {
 });
 
 
+// デバイスがモバイルかどうかを判定する関数
 function isMobile() {
-    return /Mobi|Android|iPhone|iPod/i.test(navigator.userAgent);
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+// 現在のページがモバイルページかどうかを判定する関数
+function isMobilePage() {
+    return window.location.pathname.includes("mobile.html");
 }
 
 // モバイルなら別のファイルにリダイレクト
-if (isMobile()) {
+if (isMobile() && !isMobilePage()) {
     window.location.href = "mobile.html"; // モバイル用のファイル
 } else {
     document.addEventListener("DOMContentLoaded", function() {
