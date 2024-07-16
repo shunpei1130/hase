@@ -12,6 +12,15 @@ function toggleFaq(index) {
     }
 }
 
+// CSSの読み込み完了を待つ関数
+function onCSSLoad(callback) {
+    if (document.readyState === 'complete') {
+        callback();
+    } else {
+        window.addEventListener('load', callback);
+    }
+}
+
 
 
 

@@ -658,7 +658,6 @@ button {
   text-align: center;
   text-overflow: initial;
   z-index: 51;
-  overflow: hidden;
 }
 .frame {
   position: absolute;
