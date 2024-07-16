@@ -35,14 +35,17 @@ document.querySelectorAll(".contact-mail-button").forEach(function(button) {
 
 
 function isMobile() {
-    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    return /Mobi|Android|iPhone|iPod/i.test(navigator.userAgent);
 }
 
 // モバイルなら別のファイルにリダイレクト
 if (isMobile()) {
     window.location.href = "mobile.html"; // モバイル用のファイル
+} else {
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.style.display = "block"; // PC版の場合、ページが読み込まれた後に表示
+    });
 }
-
 
 
 function createConfetti() {
@@ -69,3 +72,15 @@ function startConfetti() {
         setTimeout(createConfetti, i * 50);
     }
 }
+
+
+document.querySelectorAll(".aaa").forEach(function(button) {
+    button.addEventListener("click", function() {
+        window.location.href = "https://resignkun.com/terms"; // ここに遷移先のURLを指定
+    });
+});
+document.querySelectorAll(".rectangle-be").forEach(function(button) {
+    button.addEventListener("click", function() {
+        window.location.href = "https://resignkun.com/law"; // ここに遷移先のURLを指定
+    });
+});

@@ -19,7 +19,7 @@ button {
 .main-container {
   position: relative;
   width: 430px;
-  height: 9575px;
+  height: 8031px;
   margin: 0 auto;
   background: #ffffff;
   overflow: hidden;
@@ -209,7 +209,7 @@ button {
   width: 266.954px;
   height: 266.954px;
   top: 56px;
-  left: 72px;
+  left: 56px;
   z-index: 13;
   overflow: hidden;
 }
@@ -366,7 +366,7 @@ button {
   position: absolute;
   height: 54px;
   top: 224.613px;
-  left: 150.687px;
+  left: 133.687px;
   color: #ffd423;
   font-family: Inter, var(--default-font-family);
   font-size: 39.86638259887695px;
@@ -384,7 +384,7 @@ button {
   position: absolute;
   height: 55px;
   top: 278.213px;
-  left: 174.179px;
+  left: 155.179px;
   color: #ffcd00;
   font-family: Inter, var(--default-font-family);
   font-size: 41.03284454345703px;
@@ -400,11 +400,10 @@ button {
   width: 44.993px;
   height: 44.993px;
   top: 282.302px;
-  left: 100.588px;
+  left: 83px;
   background: url(./assets/images/7d8025bb-3575-4b49-85a4-5a066427ace6.png)
     no-repeat center;
   background-size: cover;
-  z-index: 22;
   border-radius: 50%;
 }
 .flex-row-ba {
@@ -1045,15 +1044,7 @@ button {
   z-index: 125;
   overflow: hidden;
 }
-.img-10 {
-  position: relative;
-  width: 69.133px;
-  height: 69.133px;
-  margin: 0.34px 0 0 0.29px;
-  z-index: 126;
-  -webkit-mask-image: url(./assets/images/c68ff645-594f-4263-bb00-a326b72015e2.png);
-  -webkit-mask-size: cover;
-}
+
 .box-4 {
   position: absolute;
   width: 100%;
@@ -1708,16 +1699,7 @@ button {
   z-index: 112;
   overflow: hidden;
 }
-.clip-path-group {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 113;
-  -webkit-mask-image: url(./assets/images/671b59b5-cec1-43f1-afc2-7d2c71e382db.png);
-  -webkit-mask-size: cover;
-}
+
 .group {
   position: absolute;
   width: 100%;
@@ -2098,8 +2080,8 @@ button {
   justify-content: flex-start;
   position: absolute;
   height: 61px;
-  top: 46.943px;
-  left: 104.26px;
+  top: 50.943px;
+  left: 92.26px;
   color: #ba4b2f;
   font-family: Inter, var(--default-font-family);
   font-size: 45.735992431640625px;
@@ -2143,6 +2125,17 @@ button {
   white-space: nowrap;
   z-index: 152;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.aaa{
+  margin: -24px 0 0 167px !important;
+}
+
+
 .tax-45 {
   display: flex;
   align-items: flex-start;
@@ -2150,7 +2143,7 @@ button {
   position: absolute;
   width: 135px;
   height: 61px;
-  top: 143.257px;
+  top: 151.257px;
   left: 127.592px;
   color: #ba4b2f;
   font-family: Inter, var(--default-font-family);
@@ -3025,6 +3018,29 @@ button {
   background-size: 100% 100%;
   z-index: 192;
 }
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes confetti-fall {
+  0% {
+      transform: translateY(0) rotate(0deg);
+  }
+  100% {
+      transform: translateY(100vh) rotate(720deg);
+  }
+}
+
+.confetti {
+  animation: confetti-fall 2s linear infinite;
+}
 .line-76 {
   position: relative;
   width: 288.888px;
@@ -3483,6 +3499,13 @@ button {
   white-space: nowrap;
   z-index: 249;
 }
+
+
+body {
+  margin: 0px;
+}
+
+
 .faq-section-title {
   display: flex;
   align-items: flex-start;
@@ -3500,6 +3523,72 @@ button {
   white-space: nowrap;
   z-index: 252;
 }
+
+
+
+.faq-section {
+  max-width: 1000px; /* 必要に応じて調整 */
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.faq-title {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.faq-item {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 22px;
+  box-shadow: 0 2.5px 0 black;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-height: 86px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 20px;
+}
+
+.faq-item.active {
+  max-height: 200px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.faq-toggle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  font-size: 1em;
+  color: #333;
+}
+
+
 .process-block {
   display: flex;
   flex-direction: column;
