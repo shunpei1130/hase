@@ -3503,6 +3503,7 @@ html {
 
 body {
   margin: 0px;
+  overflow-x: hidden; /* 横方向のスクロールを防ぐ */
 }
 
 
