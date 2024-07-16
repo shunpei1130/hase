@@ -284,18 +284,29 @@ padding-left: 60px; /* 左側のパディングを追加 */
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2529" viewBox="0 0 1440 2529" fill="none"><path d="M1440 239.123C1440 371.188 1117.65 478.247 720 478.247C322.355 478.247 0 371.188 0 239.123C0 107.059 322.355 0 720 0C1117.65 0 1440 107.059 1440 239.123Z" fill="url(#paint0_linear_152_50)"/><path d="M0 236.171H1440V2289.88H0V236.171Z" fill="url(#paint1_linear_152_50)"/><path d="M1440 2289.88C1440 2421.94 1117.65 2529 720 2529C322.355 2529 0 2421.94 0 2289.88C0 2157.81 322.355 2050.75 720 2050.75C1117.65 2050.75 1440 2157.81 1440 2289.88Z" fill="white"/><defs><linearGradient id="paint0_linear_152_50" x1="720" y1="0" x2="720" y2="2529" gradientUnits="userSpaceOnUse"><stop stop-color="#CFF6FF"/><stop offset="0.215" stop-color="#8ED7FF"/><stop offset="0.44" stop-color="#51B9FF"/><stop offset="0.605" stop-color="#6EC8FF"/><stop offset="1" stop-color="#CFF6FF"/></linearGradient><linearGradient id="paint1_linear_152_50" x1="720" y1="0" x2="720" y2="2529" gradientUnits="userSpaceOnUse"><stop stop-color="#CFF6FF"/><stop offset="0.215" stop-color="#8ED7FF"/><stop offset="0.44" stop-color="#51B9FF"/><stop offset="0.605" stop-color="#6EC8FF"/><stop offset="1" stop-color="#CFF6FF"/></linearGradient></defs></svg>');
     background-size: cover; /* 画像を要素のサイズに合わせてカバー */
     background-position: center; /* 画像を中央に配置 */
+    justify-content: center; /* 水平方向に中央揃え */
+}
+
+.flow-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+
 }
 
 
 .flow-box {
-    width: 1000px;
+    width: 80%;
     height: 435px;
     border-radius: 61.697px;
     border: 0.873px solid #000;
     background: #FFF;
     box-shadow: 0px 3.492px 0px 0px #000;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: -105px 130px 0 130px;
     padding: 0 80px 20px 80px;
